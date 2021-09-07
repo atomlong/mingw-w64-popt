@@ -11,7 +11,7 @@ makedepends=('mingw-w64-configure')
 license=('custom')
 url="http://rpm5.org"
 options=(!strip !buildflags staticlibs)
-source=("http://rpm5.org/files/${_pkgname}/${_pkgname}-${pkgver}.tar.gz"
+source=("https://ftp.osuosl.org/pub/blfs/conglomeration/popt/${_pkgname}-${pkgver}.tar.gz"
         "0001-nl_langinfo.mingw32.patch"
         "197416.all.patch"
         "217602.all.patch"
