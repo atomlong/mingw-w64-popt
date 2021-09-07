@@ -49,6 +49,9 @@ prepare() {
 }
 
 build() {
+  # link ssp (needed because mingw env's -fstack-protection)
+  export LDFLAGS="${LDFLAGS} -lssp"
+  
   # We assume that libtool check on 64-bit Windows DLL is broken
   # in mingw-w64 Linux cross compiler. So, force it to pass all checks
   export lt_cv_deplibs_check_method='pass_all'
